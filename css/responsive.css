@@ -113,6 +113,11 @@
         width: 100%;
     }
 
+
+    .header__inst {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -121,6 +126,33 @@
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .header__inst__single .ph4 {
+        font-size: 14px;
+    }
+    .header__inst {
+        padding: 14px 12px;
+        gap: 20px;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    .shop-single {
+        padding: 16px 12px;
+    }
+    .shop-single__meta .icon {
+        height: 38px;
+        width: 38px;
+    }
+    .shop-single__meta {
+        gap: 9px;
+    }
+    .shop-single__meta .tc {
+        font-size: 14px;
+    }
+    .shop-single__go {
+        font-size: 14px;
+        gap: 5px;
+    }
 }

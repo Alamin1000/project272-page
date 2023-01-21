@@ -20,6 +20,12 @@
     background: var(--theme__color1);
     color: #fff;
 }
+.default-button svg [stroke="#344054"] {
+    transition: 0.3s;
+}
+.default-button:hover svg [stroke="#344054"] {
+    stroke: #fff !important;
+}
 
 .text-button {
     font-size: 14px;
@@ -49,7 +55,7 @@
     font-weight: 400;
     flex-grow: 1;
     display: flex;
-    min-height: 40px !important;
+    min-height: 44px !important;
     align-items: center;
 }
 .default-select::after {
