@@ -118,6 +118,10 @@
         flex-direction: column;
     }
 
+    .shop-single {
+        padding: 19px 14px;
+    }
+
 }
 
 
