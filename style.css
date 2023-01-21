@@ -3,7 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 :root {
-  --theme__color1: #fff;
+  --theme__color1: #6941C6;
+  --dark__text: #101828;
+  --normal__text: #667085;
   --inter: 'Inter', sans-serif;
 }
 *,::before,::after {
@@ -13,6 +15,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
+  color: var(--dark__text);
   overflow-x: hidden;
   word-wrap: break-word;
   word-break: normal;
@@ -20,7 +23,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--inter);
 }
-a, a:active, a:focus, a:active, a:hover {
+a, a:active, a:active, a:hover {
   text-decoration:none !important;
   color: inherit;
 }
@@ -81,21 +84,11 @@ p:last-child{
   width: 100%;
   overflow: hidden;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .container {
-    max-width: 1500px;
+    max-width: 1240px;
   }
 }
-main {
-  margin-top: 70px;
-}
-@media (max-width: 575px) {
-  main {
-  margin-top: 50px;
-  }
-}
-
-
 
 
 /* header */
@@ -106,129 +99,96 @@ main {
   width: 100%;
   z-index: 100;
 }
+.header-in {
+  padding: 0 0 45px;
+}
+.header__bnr {
+  height: 240px;
+  background: url('images/header-banner-placeholder.svg') no-repeat center center/100% 100%;
+}
+.header__inner {
+
+}
+
+.header__inner__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header__user-blk {
+  display: flex;
+  gap: 20px;
+}
+.header__user-blk__image {
+  margin-top: -42px;
+  height: 164px;
+  width: 164px;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border-radius: 50%;
+}
+.header__user-blk__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.header__user-blk__tc {
+  padding-top: 26px;
+}
+.header__user-blk__tc h3 {
+  font-size: 30px;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+.header__user-blk__tc h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--normal__text);
+}
+.header__user-blk__tc .bottom-button {
+  margin: 15px 0 0;
+} 
+
+.header__r8-buttons {
+  margin: 24px 0 0;
+  gap: 12px;
+  display: flex;
+}
+.header__r8-buttons .button {
+
+}
+
+.header__inner__bottom {
+  padding-top: 20px;
+  padding-left: 184px;
+}
+.header__inst {
+  padding: 20px 24px;
+  gap: 20px;
+  border-radius: 8px;
+  background: #F9FAFB;
+  display: flex;
+  justify-content: space-between;
+}
+.header__inst__single {
+
+}
+.header__inst__single .ph5 {
+  font-size: 14px;
+  margin: 0 0 10px;
+  font-weight: 500;
+  color: var(--normal__text);
+}
+.header__inst__single .ph4 {
+  font-size: 16;
+  font-weight: 500;
+  margin: 0;
+}
+
 /* header-end */
 
 
-
-
-
-
-
-/* practice */
-.nav-a li {
-  display: inline-block;
-  background-color: red;
-  color: #fff;
-  margin: 10px;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.items {
-  display: flex;
-}
-.item {
-  height: 150px;
-  width: 150px;
-  background-color: blue;
-  margin: 10px;
-}
-.parallax-window {
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.parallax-window h1 {
-  font-size: 100px;
-  color: yellow;
-}
-
-
-
-
-
-
-
-/* ---offcanvas-css--- */
-.offcanvas-open {
-  font-size: 22px;
-  transition: 0.3s;
-}
-.offcanvas-open:hover {
-  color: #97A3AE;
-}
-.offcanvas-close {
-  color: var(--theme__color1);
-  position: absolute;
-  transition: 0.3s;
-  right: 25px;
-  top: 25px;
-}
-.offcanvas-close:hover {
-  color: #97A3AE;
-}
-.offcanvas-menu {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  transform: translateX(-105%);
-  transition: 0.3s;
-}
-.offcanvas-menu.active {
-  transform: translate(0);
-}
-.offcanvas-menu .offmenu {
-  max-width: 250px;
-  min-width: 200px;
-  z-index: 5;
-  position: relative;
-  background: #d5dce2;
-  height: 100%;
-  padding: 50px 20px 40px;
-  overflow: auto;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.offcanvas-menu .offmenu :-webkit-scrollbar {
-  display: none;
-}
-.offcanvas-menu ul li a {
-  display: block;
-  text-align: center;
-  font-size: 16px;
-  color: var(--theme__color1);
-  padding: 10px;
-}
-.dropdown-menu-custom ul {
-  background: #fff;
-  padding: 20px 0;
-}
-.dropdown-menu-custom ul li a {
-  color: #97A3AE;
-}
-.offcanvas-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.178);
-  z-index: 2;
-  transform: 0;
-  z-index: 900;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-.offcanvas-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-/* ---offcanvas-css-end---*/
 
 /* --preloader-- */
 #preloader {
@@ -246,7 +206,7 @@ main {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #73469B;
+  border: 6px solid var(--theme__color1);
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -271,3 +231,77 @@ main {
   }
 }
 /* --preloader-end-- */
+
+
+/* ---common-content */
+.h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cont-blk {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cont-blk p {
+  color: var(--normal__text);
+}
+.cont-blk .bottom-text-button {
+  margin-top: 8px;
+}
+/* ---common-content-end */
+
+
+/* ---lrn-section--- */
+.lnr-section {
+}
+.lnr-section__inner {
+  padding: 32px 0;
+  border-top: 1px solid #EAECF0;
+}
+
+.lnr-section__row {
+  display: flex;
+  gap: 32px;
+}
+.lnr-section__title-side {
+  width: 280px;
+  flex-shrink: 0;
+}
+.lnr-section__content-side {
+  width: 0;
+  flex-grow: 1;
+}
+
+
+.shops-grid {
+  width: 100%;
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(2,1fr);
+}
+.shop-single {
+  background: #FFFFFF;
+  border: 1px solid #EAECF0;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+.shop-single__meta {
+
+}
+.shop-single__meta .icon {
+
+}
+.shop-single__meta .icon img {
+
+}
+.shop-single__meta .tc {
+
+}
+.shop-single__go {
+
+}
+.shop-single__go .arr {
+
+}
+/* ---lrn-section---end */
