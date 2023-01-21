@@ -247,7 +247,7 @@ p:last-child{
   color: var(--normal__text);
 }
 .cont-blk .bottom-text-button {
-  margin-top: 8px;
+  margin-top: 24px;
 }
 /* ---common-content-end */
 
@@ -273,6 +273,12 @@ p:last-child{
   flex-grow: 1;
 }
 
+.read-more-action-button.collapsed .showed-text {
+  display: none;
+}
+.read-more-action-button:not(.collapsed) .hide-text {
+  display: none;
+}
 
 .shops-grid {
   width: 100%;
