@@ -95,7 +95,23 @@
     .cont-blk .bottom-text-button {
         margin-top: 5px;
     }
-
+    .lnr-section__title-side p {
+        font-size: 14px;
+    }
+    .lnr-section__title-side {
+        margin-bottom: 15px;
+    }
+    .shops-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+    .board-grid {
+        gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .board-blk__title .select-nav {
+        width: 100%;
+    }
 
 }
 
