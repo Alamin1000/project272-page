@@ -42,6 +42,8 @@
                       <h3>Zahir Mays</h3>
                       <h5>Consultor de merketing</h5>
                       <a
+                        data-bs-toggle="collapse"
+                        data-bs-target="#header__inner__bottom"
                         href="#"
                         class="default-button bottom-button d-md-inline-flex d-none"
                         >Información fiscal</a
@@ -98,28 +100,39 @@
                       </div>
                       <div class="txt">hello@zahirmays.com</div>
                     </a>
-                    <a href="#" class="default-button bottom-button d-md-none"
+                    <a
+                      href="#"
+                      class="default-button bottom-button d-md-none"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#header__inner__bottom"
                       >Información fiscal</a
                     >
                   </div>
                 </div>
                 <div class="header__inner__bottom">
-                  <div class="header__inst">
-                    <div class="header__inst__single">
-                      <p class="ph5">RFC</p>
-                      <p class="ph4">TIP180917FI0</p>
-                    </div>
-                    <div class="header__inst__single">
-                      <p class="ph5">Razón Social</p>
-                      <p class="ph4">BUHO SOLUCIONES TECNOLOGICAS</p>
-                    </div>
-                    <div class="header__inst__single">
-                      <p class="ph5">Código postal</p>
-                      <p class="ph4">66266</p>
-                    </div>
-                    <div class="header__inst__single">
-                      <p class="ph5">Régimen Fiscal</p>
-                      <p class="ph4">Régimen General de Ley Personas Morales</p>
+                  <div
+                    class="header__inner__bottom__inner collapse show active"
+                    id="header__inner__bottom"
+                  >
+                    <div class="header__inst">
+                      <div class="header__inst__single">
+                        <p class="ph5">RFC</p>
+                        <p class="ph4">TIP180917FI0</p>
+                      </div>
+                      <div class="header__inst__single">
+                        <p class="ph5">Razón Social</p>
+                        <p class="ph4">BUHO SOLUCIONES TECNOLOGICAS</p>
+                      </div>
+                      <div class="header__inst__single">
+                        <p class="ph5">Código postal</p>
+                        <p class="ph4">66266</p>
+                      </div>
+                      <div class="header__inst__single">
+                        <p class="ph5">Régimen Fiscal</p>
+                        <p class="ph4">
+                          Régimen General de Ley Personas Morales
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -213,7 +226,11 @@
                         </div>
                         <h4 class="tc">Amazon</h4>
                       </div>
-                      <a href="#" class="shop-single__go">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        class="shop-single__go"
+                      >
                         <span class="txt">Ir a página</span>
                         <img
                           src="images/arrow-up-right.svg"
@@ -229,7 +246,11 @@
                         </div>
                         <h4 class="tc">Mercado Libre</h4>
                       </div>
-                      <a href="#" class="shop-single__go">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        class="shop-single__go"
+                      >
                         <span class="txt">Ir a página</span>
                         <img
                           src="images/arrow-up-right.svg"
@@ -245,7 +266,11 @@
                         </div>
                         <h4 class="tc">Facebook shop</h4>
                       </div>
-                      <a href="#" class="shop-single__go">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        class="shop-single__go"
+                      >
                         <span class="txt">Ir a página</span>
                         <img
                           src="images/arrow-up-right.svg"
@@ -261,7 +286,11 @@
                         </div>
                         <h4 class="tc">Claro shop</h4>
                       </div>
-                      <a href="#" class="shop-single__go">
+                      <a
+                        href="https://google.com"
+                        target="_blank"
+                        class="shop-single__go"
+                      >
                         <span class="txt">Ir a página</span>
                         <img
                           src="images/arrow-up-right.svg"
@@ -335,11 +364,15 @@
                           >
                         </li>
                       </ul>
-                      <select class="select-nav default-select d-md-none nav">
+                      <select
+                        class="select-nav default-select d-md-none nav"
+                        id="board-tab-nav-select"
+                      >
                         <option
                           class="nav-link active"
                           data-bs-toggle="tab"
                           data-bs-target="#board-view-all"
+                          value="#board-view-all"
                           area-control="board-view-all"
                           role="tab"
                           aria-selected="true"
@@ -350,6 +383,7 @@
                           class="nav-link"
                           data-bs-toggle="tab"
                           data-bs-target="#board-product-design"
+                          value="#board-product-design"
                           area-control="board-product-design"
                           role="tab"
                           aria-selected="true"
@@ -360,6 +394,7 @@
                           class="nav-link"
                           data-bs-toggle="tab"
                           data-bs-target="#board-web-design"
+                          value="#board-web-design"
                           area-control="board-web-design"
                           role="tab"
                           aria-selected="true"
@@ -370,6 +405,7 @@
                           class="nav-link"
                           data-bs-toggle="tab"
                           data-bs-target="#board-app-design"
+                          value="#board-app-design"
                           area-control="board-app-design"
                           role="tab"
                           aria-selected="true"
@@ -380,6 +416,7 @@
                           class="nav-link"
                           data-bs-toggle="tab"
                           data-bs-target="#board-us-research"
+                          value="#board-us-research"
                           area-control="board-us-research"
                           role="tab"
                           aria-selected="true"

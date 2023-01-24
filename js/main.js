@@ -4,4 +4,9 @@ $(document).ready(function () {
 
   // preloader
   $("#preloader").fadeOut(500);
+
+  $("#board-tab-nav-select").on("change", function (e) {
+    var $optionSelected = $("option:selected", this);
+    $optionSelected.tab("show");
+  });
 });

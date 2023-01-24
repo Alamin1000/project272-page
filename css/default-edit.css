@@ -16,15 +16,19 @@
     transition: 0.3s;
 }
 .default-button:hover {
-    border-color: transparent;
+    /* border-color: transparent;
     background: var(--theme__color1);
-    color: #fff;
+    color: #fff; */
+    background: rgb(244, 245, 248);
+    border-color: rgb(201, 203, 205);
+    color: rgb(60, 65, 73);
+
 }
 .default-button svg [stroke="#344054"] {
     transition: 0.3s;
 }
 .default-button:hover svg [stroke="#344054"] {
-    stroke: #fff !important;
+    /* stroke: #fff !important; */
 }
 
 .text-button {
